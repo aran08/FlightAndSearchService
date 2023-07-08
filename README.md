@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ## Welcome to Flights service
+=======
+## Welcome to flights service
+>>>>>>> 28a7edfe6f45dac352514bca123fbfe90cf9bb85
 
 ## project setup
 - clone the project on your locel
@@ -21,3 +25,4 @@
 ```
 
 - Once you have added you db config as listed above, go to src folder from terminal and execute `npx sequelize db:create`
+```
