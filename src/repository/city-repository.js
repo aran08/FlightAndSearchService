@@ -1,5 +1,4 @@
 const { Op } = require('sequelize');
-
 const { City } = require ('../models/index');
 
 class CityRepository {
@@ -42,7 +41,7 @@ class CityRepository {
             //     returning:true,
             //     plain:true
             // });
-            const city=await City.findByPk(cityId);
+            const city = await City.findByPk(cityId);
             city.name=data.name;
             await city.save();
             return city;
@@ -77,7 +76,7 @@ class CityRepository {
                 return cities;
             }
             const cities = await City.findAll();
-            return city;
+            return cities;
         } catch (error) {
             console.log("Something went wrong in the repository layer");
             throw {error}; 
